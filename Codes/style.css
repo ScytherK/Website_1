@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.img-profile {
+    align-items: center;
+    max-width: 300px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.img-meal {
+    max-width: 600px;
+    height: auto;
+}
+
+.recipe-section {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 100px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}

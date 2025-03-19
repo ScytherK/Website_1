@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Your Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home_page.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="recipe1.html">Meal 1</a>
+            <a href="recipe2.html">Meal 2</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <img src= "C:\Users\Hp\Desktop\Website_1\Photos\Image 1.jpg" alt="Your Profile Picture" class="img-profile">
+            <h2>About Me</h2>
+            <p>I'm Faith Kiptoo(Court name:Imani), a sports person. I'm passionate about basketball.</p>
+            <p>I have played basketball for 2 years now.</p>
+            <p>Currently a shooting guard for Lynx in Div 1.</p>
+            <p>I wear jersey 8(RIP Mamba)</p>
+            <p>Fun facts:
+                <li>I love love literature and write poetry and novels.</li>
+                <li>I can also play football and volleyball.</li>
+                <li>My favorite player is Kobe Bryant</li>
+                <li>I am an anglophile(But I definitely do not support colonialism)</li>
+                <li>I can speak in 3 different languages.
+                    Can you guess the languages?
+                    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Guessing Game</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .guess-box {
+            margin: 10px;
+            padding: 8px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #clue {
+          margin-top: 10px;
+          font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess My Languages!</h1>
+    <p>Try to guess which languages I can speak. Enter your guesses in the boxes below. The order doesn't matter.</p>
+    <p>Small clue; All languages are European</p>
+
+    <input type="text" id="guess1" class="guess-box" placeholder="Language 1">
+    <input type="text" id="guess2" class="guess-box" placeholder="Language 2">
+    <input type="text" id="guess3" class="guess-box" placeholder="Language 3">
+
+    <button id="guessButton">Check Guesses</button>
+    <p id="result"></p>
+    <p id="clue"></p>
+
+    <script>
+        const correctLanguages = ["english", "spanish", "russian"];
+
+        document.getElementById('guessButton').addEventListener('click', function() {
+            const guess1 = document.getElementById('guess1').value.toLowerCase();
+            const guess2 = document.getElementById('guess2').value.toLowerCase();
+            const guess3 = document.getElementById('guess3').value.toLowerCase();
+            const resultDisplay = document.getElementById('result');
+            const clueDisplay = document.getElementById('clue');
+
+            const guesses = [guess1, guess2, guess3];
+            let correctCount = 0;
+            let missedLanguages = [];
+
+            for (let correctLanguage of correctLanguages) {
+                if (guesses.includes(correctLanguage)) {
+                    correctCount++;
+                } else {
+                    missedLanguages.push(correctLanguage);
+                }
+            }
+
+            if (correctCount === 3) {
+                resultDisplay.textContent = "Correct!";
+                resultDisplay.style.color = "green";
+                clueDisplay.textContent = "";
+            } else {
+                resultDisplay.textContent = "Guess again!";
+                resultDisplay.style.color = "red";
+                if(missedLanguages.length > 0){
+                    let clue = "";
+                    if (missedLanguages.includes("english")){
+                        clue = "Clue: Britain.";
+                    } else if (missedLanguages.includes("spanish")) {
+                        clue = "Clue: Reggaeton, Latinos";
+                    } else {
+                        clue = "Clue: Putin.";
+                    }
+                    clueDisplay.textContent = clue;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+                </li>
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            
+                <li>Ball handling</li>
+                <li>Shooting( both perimeter shots and 3 pointers)</li>
+                <li>Play making</li>
+            
+        </section>
+        <img src="C:\Users\Hp\Desktop\Website_1\Photos\Image 3.jpg">
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Imani | <a href="https://www.instagram.com/kiptoo_chiri/">Instagram</a></p>
+    </footer>
+
+</body>
+</html>
